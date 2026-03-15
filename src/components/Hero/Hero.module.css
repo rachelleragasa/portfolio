@@ -1,0 +1,224 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232, 68, 26, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--accent-2);
+  background: rgba(45, 106, 79, 0.08);
+  border: 1px solid rgba(45, 106, 79, 0.2);
+  padding: 0.35rem 0.875rem;
+  border-radius: 100px;
+  width: fit-content;
+  letter-spacing: 0.04em;
+}
+
+.pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-2);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.pulse::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: rgba(45, 106, 79, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0; transform: scale(1.8); }
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  animation: fadeUp 0.8s 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.titleLine {
+  display: block;
+}
+
+.italic {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.sub {
+  max-width: 560px;
+  font-size: 1.125rem;
+  color: var(--ink-2);
+  line-height: 1.7;
+  font-weight: 300;
+  animation: fadeUp 0.8s 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.8s 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.primary {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.primary:hover {
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+.secondary {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--border-dark);
+  padding-bottom: 1px;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.secondary:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  width: fit-content;
+  animation: fadeUp 0.8s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.statNum {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--ink);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.scrollHint {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  writing-mode: vertical-rl;
+  animation: fadeUp 1s 0.8s both;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--border-dark), transparent);
+  animation: scrollAnim 2s ease-in-out infinite;
+}
+
+@keyframes scrollAnim {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .scrollHint {
+    display: none;
+  }
+
+  .stats {
+    gap: 1.25rem;
+  }
+}
