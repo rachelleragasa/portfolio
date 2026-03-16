@@ -9,6 +9,7 @@ export const projects: Project[] = [
     tags: ["Gatsby", "styled-components"],
     year: "2024",
     featured: true,
+    link: "https://www.cirilofilipinokainan.co.uk/",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const projects: Project[] = [
     tags: ["Wordpress", "WooCommerce", "HTML", "CSS"],
     year: "2019",
     featured: true,
+    link: "https://www.escapedance.co.uk/",
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     year: "2019",
     featured: true,
+    link: "https://www.readingschoolofdance.com/",
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ export const projects: Project[] = [
     tags: ["Gatsby", "Material UI", "Firebase"],
     year: "2020",
     featured: true,
+    link: "https://medium.com/ukvscovidhack/tell-my-gp-63de96231e38",
   },
 ];
 
