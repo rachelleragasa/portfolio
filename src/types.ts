@@ -14,6 +14,7 @@ export interface Experience {
   period: string;
   description: string;
   highlights: string[];
+  tags: string[];
 }
 
 export interface Skill {

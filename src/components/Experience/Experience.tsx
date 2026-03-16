@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { experiences } from "../../data";
 import styles from "./Experience.module.css";
+import Tag from "../Tag/Tag";
 
 function Experience() {
   const [active, setActive] = useState(0);
-  const exp = experiences[active];
+  const experience = experiences[active];
 
   return (
     <section id="experience" className={styles.section}>
@@ -30,14 +31,14 @@ function Experience() {
           {/* Detail panel */}
           <div className={styles.panel} key={active}>
             <div className={styles.panelHeader}>
-              <h3 className={styles.role}>{exp.role}</h3>
-              <span className={styles.company}>@ {exp.company}</span>
+              <h3 className={styles.role}>{experience.role}</h3>
+              <span className={styles.company}>@ {experience.company}</span>
             </div>
-            <p className={styles.period}>{exp.period}</p>
-            <p className={styles.desc}>{exp.description}</p>
+            <p className={styles.period}>{experience.period}</p>
+            <p className={styles.desc}>{experience.description}</p>
 
             <ul className={styles.highlights}>
-              {exp.highlights.map((h, i) => (
+              {experience.highlights.map((h, i) => (
                 <li key={i} className={styles.highlight}>
                   <span className={styles.bullet} aria-hidden="true">
                     ▹
@@ -46,6 +47,7 @@ function Experience() {
                 </li>
               ))}
             </ul>
+            <Tag tags={experience.tags} />
           </div>
         </div>
       </div>

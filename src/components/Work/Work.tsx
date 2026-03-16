@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { projects } from "../../data";
 import styles from "./Work.module.css";
+import Tag from "../Tag/Tag";
 
 function Work() {
   const [filter, setFilter] = useState<"all" | "featured">("featured");
@@ -69,13 +70,7 @@ function Work() {
               <h3 className={styles.cardTitle}>{project.title}</h3>
               <p className={styles.cardDesc}>{project.description}</p>
 
-              <div className={styles.tags}>
-                {project.tags.map((tag) => (
-                  <span key={tag} className={styles.tag}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              <Tag tags={project.tags} />
             </article>
           ))}
         </div>

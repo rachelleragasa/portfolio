@@ -53,6 +53,16 @@ export const experiences: Experience[] = [
       "Integrated Heap Analytics and became the team’s go-to for support ensuring consistent, reliable data for product decisions.",
       "Contributed to cross-team discovery and delivery of a new AI-integrated page — from identifying user pain points and evaluating business impact through to production.",
     ],
+    tags: [
+      "React",
+      "TypeScript",
+      "React Query",
+      "Vite",
+      "Vitest",
+      "React Testing Library",
+      "Storybook",
+      "Sentry",
+    ],
   },
   {
     company: "Costa Coffee",
@@ -65,6 +75,14 @@ export const experiences: Experience[] = [
       "Became the team’s go-to voice on web accessibility — running upskilling sessions on WCAG and pushing for accessibility to be embedded in the design process rather than bolted on at the end.",
       "Implemented i18n to support multiple languages across international market websites, ensuring a localised and consistent user experience.",
     ],
+    tags: [
+      "Gatsby",
+      "GraphQL",
+      "Styled Components",
+      "Tailwind CSS",
+      "React Testing Library",
+      "Contentful",
+    ],
   },
   {
     company: "Whitbread - Premier Inn",
@@ -76,6 +94,14 @@ export const experiences: Experience[] = [
       "Worked across Premierinn.com’s Booking Flow during an AngularJS-to-React migration — building new features in React while keeping existing AngularJS components stable within Adobe Experience Manager environment.",
       "A/B tested multiple booking journey configurations to optimise conversion funnel performance, using data-driven insights to inform the most effective user flow.",
     ],
+    tags: [
+      "React",
+      "Redux",
+      "AngularJS",
+      "Jest",
+      "Sass",
+      "Adobe Experience Manager (AEM)",
+    ],
   },
   {
     company: "AND Digital",
@@ -84,6 +110,7 @@ export const experiences: Experience[] = [
     description:
       "Worked across internal product development and client-facing engagements as part of AND Digital's consultancy model, delivering web solutions within Agile/Scrum teams.",
     highlights: [],
+    tags: ["AngularJS", "Adobe Experience Manager (AEM)"],
   },
 ];
 

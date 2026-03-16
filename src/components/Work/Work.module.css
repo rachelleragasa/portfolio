@@ -81,7 +81,7 @@
 }
 
 .card::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: var(--accent);
@@ -159,25 +159,6 @@
   flex: 1;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-top: auto;
-}
-
-.tag {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.06em;
-  color: var(--ink-3);
-  background: var(--bg);
-  border: 1px solid var(--border);
-  padding: 0.2rem 0.6rem;
-  border-radius: var(--radius);
-  transition: all var(--transition);
-}
-
 .card:hover .tag {
   border-color: rgba(232, 68, 26, 0.2);
   color: var(--accent);
@@ -185,8 +166,14 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 900px) {
