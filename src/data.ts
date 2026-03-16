@@ -28,6 +28,15 @@ export const projects: Project[] = [
     year: "2019",
     featured: true,
   },
+  {
+    id: 4,
+    title: "UKvsCOVID Hackathon - Tell My GP",
+    description:
+      "Built during the #UKvsCOVIDHack, Tell My GP is a web app designed to bridge the gap between COVID-19 patients and their GPs — addressing a real problem where patient data from 111 calls was invisible to local doctors.",
+    tags: ["Gatsby", "Material UI", "Firebase"],
+    year: "2020",
+    featured: true,
+  },
 ];
 
 export const experiences: Experience[] = [
