@@ -15,9 +15,10 @@ function About() {
             </h2>
             <div className={styles.bodyText}>
               <p>
-                I'm Rachelle, a senior frontend developer now based in Porto. I
-                specialise in building scalable, user-facing products that make
-                a difference.
+                I'm Rachelle, a senior frontend engineer based in Porto. I
+                specialise in building scalable, user-facing products within
+                microfrontend architecures, owning multiple parts of a product
+                end-to-end, from component to production.
               </p>
               <p>
                 Off the keyboard, I'm a taekwondo practitioner — same
@@ -33,8 +34,13 @@ function About() {
               <div className={styles.metaItem}>
                 <span className={styles.metaKey}>Focus</span>
                 <span className={styles.metaVal}>
-                  React, TypeScript, React Testing Library, Web Accessibility
+                  React, TypeScript, Microfrontend Architecture, Web
+                  Accessibility
                 </span>
+              </div>
+              <div className={styles.metaItem}>
+                <span className={styles.metaKey}>Experience</span>
+                <span className={styles.metaVal}>10</span>
               </div>
               <div className={styles.metaItem}>
                 <span className={styles.metaKey}>Education</span>
@@ -60,24 +66,6 @@ function About() {
                 </div>
               ))}
             </div>
-
-            {/* <div className={styles.currently}>
-              <span className={styles.currentlyLabel}>
-                Currently excited about
-              </span>
-              <div className={styles.currentlyItems}>
-                {[
-                  "React Server Components",
-                  "Biome",
-                  "View Transitions API",
-                  "Effect-TS",
-                ].map((item) => (
-                  <span key={item} className={styles.currentlyItem}>
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

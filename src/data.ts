@@ -133,10 +133,14 @@ export const skills: Skill[] = [
   },
   {
     category: "Tooling",
-    items: ["Vite", "Storybook"],
+    items: ["Vite", "Sentry", "AI-assisted development", "Storybook"],
   },
   {
     category: "Craft",
     items: ["Design Systems", "Web Accessibility"],
+  },
+  {
+    category: "Architecture",
+    items: ["Microfrontend Architecture", "Shared Deployment Ownership"],
   },
 ];

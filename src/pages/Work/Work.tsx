@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { projects } from "../../data";
 import styles from "./Work.module.css";
-import Tag from "../Tag/Tag";
+import Tag from "../../components/Tag/Tag";
 
 function Work() {
   const [filter, setFilter] = useState<"all" | "featured">("featured");
@@ -12,7 +12,7 @@ function Work() {
     <section id="work" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
-          <div className={styles.sectionLabel}>Selected Work</div>
+          <div className={styles.sectionLabel}>Work</div>
           <h2 className={styles.title}>Projects I've built</h2>
           <div className={styles.filters}>
             <button

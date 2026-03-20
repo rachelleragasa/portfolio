@@ -6,21 +6,21 @@ function Hero() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.badge}>
           <span className={styles.pulse} />
-          Available for new projects
+          Available · Passionate about building tech that matters
         </div>
 
         <h1 className={styles.title}>
-          <span className={styles.titleLine}>Senior Frontend</span>
+          <span className={styles.titleLine}>Blue belt in</span>
           <span className={styles.titleLine}>
-            Developer
+            Taekwondo
             <span className={styles.italic}> & </span>
-            Blue belt in Taekwondo
+            Senior Frontend Engineer
           </span>
         </h1>
 
         <p className={styles.sub}>
-          I build performant, accessible interfaces that people love to use. 10
-          years turning complex problems into elegant digital experiences.
+          React · TypeScript · Accessibility · AI-assisted development · 10
+          years building products that scale.
         </p>
 
         <div className={styles.actions}>
@@ -28,7 +28,7 @@ function Hero() {
             View my work
           </a>
           <a href="#contact" className={styles.secondary}>
-            Get in touch →
+            Let's chat →
           </a>
         </div>
 

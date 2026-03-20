@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { experiences } from "../../data";
 import styles from "./Experience.module.css";
-import Tag from "../Tag/Tag";
+import Tag from "../../components/Tag/Tag";
 
 function Experience() {
   const [active, setActive] = useState(0);

@@ -47,8 +47,8 @@ function Contact() {
               <em>something great</em>
             </h2>
             <p className={styles.sub}>
-              I'm open to new roles and interesting freelance projects. If you
-              think we'd work well together, I'd love to hear from you.
+              I'm open to new roles and the occasional freelance collaboration.
+              If you think we'd work well together, I'd love to hear from you.
             </p>
 
             <div className={styles.links}>
@@ -145,9 +145,14 @@ function Contact() {
                       type="text"
                       autoComplete="name"
                       className={styles.input}
-                      placeholder="Jane Smith"
+                      placeholder="Your name here"
+                      aria-describedby="name-error"
                     />
-                    {errors.name && <p>{errors.name.message}</p>}
+                    {errors.name && (
+                      <p id="name-error" role="alert">
+                        {errors.name.message}
+                      </p>
+                    )}
                   </div>
                   <div className={styles.field}>
                     <label htmlFor="email" className={styles.label}>
@@ -159,9 +164,14 @@ function Contact() {
                       type="email"
                       autoComplete="email"
                       className={styles.input}
-                      placeholder="jane@company.com"
+                      placeholder="Where should I reply?"
+                      aria-describedby="email-error"
                     />
-                    {errors.email && <p>{errors.email.message}</p>}
+                    {errors.email && (
+                      <p id="email-error" role="alert">
+                        {errors.email.message}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -174,9 +184,14 @@ function Contact() {
                     id="message"
                     rows={5}
                     className={styles.textarea}
-                    placeholder="Tell me about your project or opportunity..."
+                    placeholder="Tell me what you're building and why you need a great frontend dev on it."
+                    aria-describedby="message-error"
                   />
-                  {errors.message && <p>{errors.message.message}</p>}
+                  {errors.message && (
+                    <p id="message-error" role="alert">
+                      {errors.message.message}
+                    </p>
+                  )}
                 </div>
 
                 {status === "error" && (
