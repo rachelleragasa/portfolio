@@ -5,7 +5,7 @@ A clean, minimal portfolio built with **React 18**, **TypeScript**, and **Vite**
 ## Design
 
 - **Palette**: Warm off-white (`#F8F7F4`) base with a single terracotta accent (`#E8441A`) and a muted forest green for status indicators
-- **Typography**: DM Serif Display (headings) + DM Sans (body) + DM Mono (labels/code) — all from Google Fonts
+- **Typography**: DM Serif Display (headings) + DM Sans (body) + DM Mono (labels/code)
 - **Layout**: CSS Grid with a consistent 1120px container, 1.5px gap grid for project cards
 - **Motion**: CSS keyframe animations only — no JS animation libraries needed
 

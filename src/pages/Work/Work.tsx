@@ -2,6 +2,7 @@ import { useState } from "react";
 import { projects } from "../../data";
 import styles from "./Work.module.css";
 import Tag from "../../components/Tag/Tag";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 function Work() {
   const [filter, setFilter] = useState<"all" | "featured">("featured");
@@ -11,9 +12,7 @@ function Work() {
   return (
     <section id="work" className={styles.section}>
       <div className="container">
-        <div className={styles.header}>
-          <div className={styles.sectionLabel}>Work</div>
-          <h2 className={styles.title}>Projects I've built</h2>
+        <SectionTitle title="Projects I've built">
           <div className={styles.filters}>
             <button
               className={`${styles.filter} ${filter === "featured" ? styles.active : ""}`}
@@ -28,7 +27,7 @@ function Work() {
               All projects
             </button>
           </div>
-        </div>
+        </SectionTitle>
 
         <div className={styles.grid}>
           {displayed.map((project, i) => (

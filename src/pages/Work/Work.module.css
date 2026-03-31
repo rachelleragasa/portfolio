@@ -1,29 +1,7 @@
 .section {
   padding: 8rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 3.5rem;
-}
-
-.sectionLabel {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.title {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: -0.03em;
-  color: var(--ink);
-  line-height: 1.1;
+  border-top: 1px solid var(--ink);
+  background-color: var(--sunshine);
 }
 
 .filters {
@@ -34,20 +12,15 @@
 
 .filter {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   letter-spacing: 0.04em;
   padding: 0.35rem 0.875rem;
   border-radius: 100px;
-  border: 1px solid var(--border);
-  background: none;
-  color: var(--ink-2);
+  border: 1px solid var(--surface);
+  background: var(--surface);
+  color: var(--ink);
   cursor: pointer;
   transition: all var(--transition);
-}
-
-.filter:hover {
-  border-color: var(--ink-3);
-  color: var(--ink);
 }
 
 .filter.active {
@@ -61,9 +34,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5px;
-  background: var(--border);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  background: var(--sunshine);
+  /* border: 1px solid var(--ink); */
   overflow: hidden;
 }
 
@@ -78,6 +50,7 @@
   animation: fadeIn 0.5s both;
   position: relative;
   cursor: default;
+  border: 1px solid var(--ink);
 }
 
 .card::after {
@@ -88,14 +61,6 @@
   opacity: 0;
   transition: opacity var(--transition);
   pointer-events: none;
-}
-
-.card:hover {
-  background: var(--accent-soft);
-}
-
-.card:hover .cardTitle {
-  color: var(--accent);
 }
 
 /* Featured card spans 2 columns */
@@ -111,8 +76,7 @@
 
 .year {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--ink-3);
+  color: var(--ink);
   letter-spacing: 0.08em;
 }
 
@@ -124,7 +88,7 @@
   height: 28px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  color: var(--ink-3);
+  color: var(--ink);
   transition: all var(--transition);
   opacity: 0;
 }
@@ -152,11 +116,10 @@
 }
 
 .cardDesc {
-  font-size: 0.9rem;
-  color: var(--ink-2);
+  color: var(--ink);
   line-height: 1.65;
   font-weight: 300;
-  flex: 1;
+  font-size: 1.125rem;
 }
 
 .card:hover .tag {

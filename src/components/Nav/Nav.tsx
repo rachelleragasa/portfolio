@@ -21,8 +21,8 @@ function Nav() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.inner}`}>
-        <a href="#" className={styles.logo}>
-          RR<span className={styles.dot}>.</span>
+        <a href="/" className={styles.logo}>
+          rachelle ragasa<span className={styles.dot}>.</span>
         </a>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
@@ -36,14 +36,6 @@ function Nav() {
               {link.label}
             </a>
           ))}
-          {/* <a
-            href="/cv.pdf"
-            className={styles.cta}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            CV ↗
-          </a> */}
         </nav>
 
         <button

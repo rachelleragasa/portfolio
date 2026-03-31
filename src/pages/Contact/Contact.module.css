@@ -1,7 +1,7 @@
 .section {
   padding: 8rem 0 6rem;
-  border-top: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--lavendar);
+  border-top: 1px solid var(--ink);
 }
 
 .inner {
@@ -9,16 +9,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: start;
-}
-
-/* Left */
-.sectionLabel {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.75rem;
 }
 
 .title {
@@ -32,12 +22,12 @@
 
 .title em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--lavendar-dark);
 }
 
 .sub {
-  font-size: 0.9375rem;
-  color: var(--ink-2);
+  font-size: 1.125rem;
+  color: var(--ink);
   line-height: 1.75;
   font-weight: 300;
   margin-bottom: 2rem;
@@ -53,21 +43,16 @@
   display: inline-flex;
   align-items: center;
   gap: 0.625rem;
-  font-size: 0.875rem;
-  color: var(--ink-2);
+  font-size: 1.125rem;
+  color: var(--ink);
   transition: color var(--transition);
   width: fit-content;
 }
 
-.contactLink:hover {
-  color: var(--accent);
-}
-
 /* Form */
 .formWrap {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  background: var(--lavendar);
+  border: 1px solid var(--ink);
   padding: 2.5rem;
 }
 
@@ -91,10 +76,10 @@
 
 .label {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 1.125rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-3);
+  color: var(--ink);
 }
 
 .input,
@@ -102,9 +87,8 @@
   font-family: var(--font-body);
   font-size: 0.9rem;
   color: var(--ink);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  background: var(--lavendar);
+  border: 1px solid var(--ink);
   padding: 0.65rem 0.875rem;
   width: 100%;
   transition:
@@ -116,7 +100,7 @@
 
 .input::placeholder,
 .textarea::placeholder {
-  color: var(--ink-3);
+  color: var(--ink);
 }
 
 .input:focus,
@@ -129,10 +113,9 @@
   font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 500;
-  color: #fff;
-  background: var(--ink);
-  border: none;
-  border-radius: var(--radius);
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--ink);
   padding: 0.875rem 1.75rem;
   cursor: pointer;
   transition:
@@ -142,11 +125,7 @@
   align-items: center;
   justify-content: center;
   min-height: 50px;
-}
-
-.submit:hover:not(:disabled) {
-  background: var(--accent);
-  transform: translateY(-1px);
+  border-radius: 100px;
 }
 
 .submit:disabled {
@@ -201,7 +180,7 @@
 
 .success p {
   font-size: 0.9rem;
-  color: var(--ink-2);
+  color: var(--ink);
   line-height: 1.6;
   max-width: 280px;
 }

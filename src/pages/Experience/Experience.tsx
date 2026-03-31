@@ -2,6 +2,7 @@ import { useState } from "react";
 import { experiences } from "../../data";
 import styles from "./Experience.module.css";
 import Tag from "../../components/Tag/Tag";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 function Experience() {
   const [active, setActive] = useState(0);
@@ -10,11 +11,9 @@ function Experience() {
   return (
     <section id="experience" className={styles.section}>
       <div className="container">
-        <div className={styles.sectionLabel}>Career</div>
-        <h2 className={styles.title}>Where I've worked</h2>
+        <SectionTitle title="Where I've worked" />
 
         <div className={styles.layout}>
-          {/* Sidebar */}
           <div className={styles.sidebar}>
             {experiences.map((e, i) => (
               <button
@@ -28,7 +27,6 @@ function Experience() {
             ))}
           </div>
 
-          {/* Detail panel */}
           <div className={styles.panel} key={active}>
             <div className={styles.panelHeader}>
               <h3 className={styles.role}>{experience.role}</h3>

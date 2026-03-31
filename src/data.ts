@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 1,
     title: "Cirilo Filipino Kainan",
     description:
-      "Website, signage, and menu design for Cirilo Filipino Kainan — a cohesive digital and print identity for an East London Filipino restaurant.",
+      "Website, signage, and menu design for Cirilo Filipino Kainan, a cohesive digital and print identity for an East London Filipino restaurant.",
     tags: ["Gatsby", "styled-components"],
     year: "2024",
     featured: true,
@@ -15,7 +15,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Escape Dance Holiday",
     description:
-      "E-commerce website for ESCAPE Dance Holiday — built on WooCommerce with Stripe payment integration for package bookings.",
+      "E-commerce website for ESCAPE Dance Holiday, built on WooCommerce with Stripe payment integration for package bookings.",
     tags: ["Wordpress", "WooCommerce", "HTML", "CSS"],
     year: "2019",
     featured: true,
@@ -49,13 +49,11 @@ export const experiences: Experience[] = [
     role: "Senior Frontend Engineer",
     period: "2021 — Present",
     description:
-      "Engineered new functionality within a healthcare medication management system, making it faster and more intuitive for carers to manage medications and set administration frequencies — improving daily care delivery.",
+      "Cera is Europe's largest provider of digital-first home healthcare.",
     highlights: [
-      "Owned frontend development of Cera's medication management module end-to-end — one of the most safety-critical parts of the platform — kept reliable through disciplined unit testing and careful, considered development.",
-      "Bridged design and engineering by translating Figma designs into accessible, reusable components — enforcing WCAG standards through eslint-a11y — contributing to a shared component library and design system documented in Storybook within a carefully maintained monorepo.",
-      "Treated deployment as a process, not an event — using feature flags and pilot releases to validate changes with real users before full rollout, and Sentry to monitor production health and catch regressions early.",
-      "Integrated Heap Analytics and became the team’s go-to for support ensuring consistent, reliable data for product decisions.",
-      "Contributed to cross-team discovery and delivery of a new AI-integrated page — from identifying user pain points and evaluating business impact through to production.",
+      "Built new features in a healthcare medication management system that made it quicker and easier for carers to manage medications and set administration schedules. ",
+      "Piloted releases before going live to avoid disrupting daily care, with feedback from carers used to iron out issues early. Worked in a microfrontend setup and helped keep a shared monorepo in good shape across the team.",
+      "Developed AI-powered tools that took complexity out of everyday carer workflows, saving time and improving care quality.",
     ],
     tags: [
       "React",
@@ -66,6 +64,7 @@ export const experiences: Experience[] = [
       "React Testing Library",
       "Storybook",
       "Sentry",
+      "Material UI",
     ],
   },
   {
@@ -73,11 +72,10 @@ export const experiences: Experience[] = [
     role: "Frontend Developer",
     period: "2019 — 2021",
     description:
-      "Worked within an Agile/Scrum team building and releasing new features for the Costa Coffee website, collaborating closely with designers and product to deliver a polished, responsive experience across devices.",
+      "Costa is the Nation's Favourite coffee shop and the largest and fastest growing coffee shop chain in the UK.",
     highlights: [
-      "Developed reusable, responsive Contentful components within a JAMStack architecture, accelerating website delivery across multiple international markets.",
-      "Became the team’s go-to voice on web accessibility — running upskilling sessions on WCAG and pushing for accessibility to be embedded in the design process rather than bolted on at the end.",
-      "Implemented i18n to support multiple languages across international market websites, ensuring a localised and consistent user experience.",
+      "Worked within an Agile/Scrum team building and releasing new features for the Costa Coffee website, collaborating closely with designers and product to deliver a polished, responsive experience across devices.",
+      "Contributed to frontend architecture decisions and picked up performance work across the site. Built and managed content-driven features through Contentful CMS, keeping the experience consistent across devices.",
     ],
     tags: [
       "Gatsby",
@@ -93,10 +91,10 @@ export const experiences: Experience[] = [
     role: "Frontend Developer",
     period: "2017 — 2019",
     description:
-      "Embedded within an Agile/Scrum team delivering and maintaining the Premier Inn website across the UK and Germany, with a focus on the customer booking and booking management journey — a high-traffic, conversion-critical part of the product.",
+      "Whitbread is a leading hospitality business and the owner of Premier Inn, the UK's biggest hotel brand.",
     highlights: [
-      "Worked across Premierinn.com’s Booking Flow during an AngularJS-to-React migration — building new features in React while keeping existing AngularJS components stable within Adobe Experience Manager environment.",
-      "A/B tested multiple booking journey configurations to optimise conversion funnel performance, using data-driven insights to inform the most effective user flow.",
+      "Embedded within an Agile/Scrum team delivering and maintaining the Premier Inn website across the UK and Germany, with a focus on the customer booking and booking management journey — a high-traffic, conversion-critical part of the product.",
+      "Built major features across the booking flow and contributed to architectural decisions on the frontend. Worked with React and AEM on both new development and improvements to existing customer journeys — covering two markets throughout.",
     ],
     tags: [
       "React",
@@ -112,8 +110,11 @@ export const experiences: Experience[] = [
     role: "Associate Product Developer AND Dancer",
     period: "2015 — 2017",
     description:
+      "AND Digital is on a mission to close the world's digital skills gap.",
+    highlights: [
       "Worked across internal product development and client-facing engagements as part of AND Digital's consultancy model, delivering web solutions within Agile/Scrum teams.",
-    highlights: [],
+    ],
+
     tags: ["AngularJS", "Adobe Experience Manager (AEM)"],
   },
 ];

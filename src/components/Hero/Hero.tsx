@@ -4,18 +4,10 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <div className={`container ${styles.inner}`}>
-        <div className={styles.badge}>
-          <span className={styles.pulse} />
-          Available · Passionate about building tech that matters
-        </div>
-
         <h1 className={styles.title}>
-          <span className={styles.titleLine}>Blue belt in</span>
-          <span className={styles.titleLine}>
-            Taekwondo
-            <span className={styles.italic}> & </span>
-            Senior Frontend Engineer
-          </span>
+          <span className={styles.titleLine}>Hey i'm Rachelle,</span>
+          <span className={styles.titleLine}>a senior frontend</span>
+          <span className={styles.titleLine}>Engineer</span>
         </h1>
 
         <p className={styles.sub}>
@@ -28,20 +20,8 @@ function Hero() {
             View my work
           </a>
           <a href="#contact" className={styles.secondary}>
-            Let's chat →
+            Let's chat
           </a>
-        </div>
-
-        <div className={styles.stats}>
-          <div className={styles.stat}>
-            <span className={styles.statNum}>10</span>
-            <span className={styles.statLabel}>Years experience</span>
-          </div>
-          <div className={styles.divider} />
-          <div className={styles.stat}>
-            <span className={styles.statNum}>6+</span>
-            <span className={styles.statLabel}>Taekwondo competitions</span>
-          </div>
         </div>
       </div>
 

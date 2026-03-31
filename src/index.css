@@ -1,28 +1,43 @@
 /* =============================================
    DESIGN TOKENS & RESET
    ============================================= */
+
 :root {
-  --bg: #F8F7F4;
-  --surface: #FFFFFF;
-  --ink: #1A1A18;
-  --ink-2: #5A5A54;
-  --ink-3: #9A9A90;
-  --accent: #E8441A;
-  --accent-soft: #FDF0EC;
-  --accent-2: #2D6A4F;
-  --border: #E4E3DE;
-  --border-dark: #C8C7C0;
+  --bg: #f8f7f4;
+  --surface: #f8f7f4;
+  --ink: #1e1410;
+  --accent: #e8441a;
+  --accent-soft: #fdf0ec;
+  --accent-2: #2d6a4f;
+  --border: #1e1410;
+  --border-dark: #c8c7c0;
 
-  --font-display: 'DM Serif Display', Georgia, serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
-  --font-mono: 'DM Mono', 'Courier New', monospace;
+  --sunshine: #e9ab47;
+  --lavendar: #cba3cb;
+  --poppy: #ea7953;
+  --coconut: #ecd8b3;
+  --olive: #51b38a;
 
-  --radius: 4px;
+  --lavendar-dark: #6b3d6b;
+
+  --lavendar-light: #f7f0f7;
+  --poppy-light: #fdf0eb;
+  --sunshine-light: #fef6e0;
+  --olive-light: #f0edd8;
+
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "DM Mono", "Courier New", monospace;
+  --font-breakers: "breakers", sans-serif;
+
+  --radius: 100px;
   --radius-lg: 12px;
   --transition: 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -35,7 +50,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg);
+  font-size: 1rem;
+  background-color: var(--surface);
   color: var(--ink);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -53,32 +69,16 @@ img {
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
-}
-
-/* =============================================
-   SCROLLBAR
-   ============================================= */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--border-dark);
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--ink-3);
 }
 
 /* =============================================
    SELECTION
    ============================================= */
 ::selection {
-  background: var(--accent);
+  background: var(--poppy);
   color: #fff;
 }
 

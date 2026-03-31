@@ -1,7 +1,7 @@
 .footer {
-  border-top: 1px solid var(--border);
   padding: 2rem 0;
-  background: var(--bg);
+  background: var(--lavendar);
+  border-top: 1px solid var(--ink);
 }
 
 .inner {
@@ -15,7 +15,7 @@
 .copy {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  color: var(--ink-3);
+  color: var(--ink);
   letter-spacing: 0.04em;
 }
 
@@ -27,11 +27,7 @@
 .link {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  color: var(--ink-3);
+  color: var(--ink);
   letter-spacing: 0.06em;
   transition: color var(--transition);
-}
-
-.link:hover {
-  color: var(--accent);
 }

@@ -1,3 +1,4 @@
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { skills } from "../../data";
 import styles from "./About.module.css";
 
@@ -7,18 +8,18 @@ function About() {
       <div className="container">
         <div className={styles.grid}>
           <div className={styles.bio}>
-            <div className={styles.sectionLabel}>About</div>
-            <h2 className={styles.title}>
-              I care deeply about
-              <br />
-              <em>craft & clarity</em>
-            </h2>
+            <SectionTitle title="I care deeply about craft and clarity" />
             <div className={styles.bodyText}>
               <p>
-                I'm Rachelle, a senior frontend engineer based in Porto. I
-                specialise in building scalable, user-facing products within
-                microfrontend architecures, owning multiple parts of a product
-                end-to-end, from component to production.
+                I'm Rachelle, a senior frontend engineer based in Porto. I love
+                working close to the product — owning features end-to-end,
+                across microfrontend architectures, from the first component to
+                production.
+              </p>
+              <p>
+                I care about the people using what I build, which is why
+                accessibility and safety-critical environments aren't just boxes
+                I tick — they're things I genuinely think about.
               </p>
               <p>
                 Off the keyboard, I'm a taekwondo practitioner — same

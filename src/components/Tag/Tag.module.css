@@ -7,11 +7,11 @@
 
 .tag {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.875rem;
   letter-spacing: 0.06em;
-  color: var(--ink-3);
+  color: var(--ink);
   background: var(--bg);
-  border: 1px solid var(--border);
+  border: 1px solid var(--ink);
   padding: 0.2rem 0.6rem;
   border-radius: var(--radius);
   transition: all var(--transition);
