@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "Cirilo Filipino Kainan",
     description:
       "Website, signage, and menu design for Cirilo Filipino Kainan, a cohesive digital and print identity for an East London Filipino restaurant.",
-    tags: ["Gatsby", "styled-components"],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js"],
     year: "2024",
     featured: true,
     link: "https://www.cirilofilipinokainan.co.uk/",
