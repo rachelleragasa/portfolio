@@ -46,6 +46,7 @@ function Work() {
                       rel="noopener noreferrer"
                       className={styles.externalLink}
                       aria-label="View project"
+                      data-umami-event={`${project.title} clicked`}
                     >
                       <svg
                         width="14"

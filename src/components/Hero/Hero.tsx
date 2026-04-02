@@ -16,10 +16,18 @@ function Hero() {
         </p>
 
         <div className={styles.actions}>
-          <a href="#work" className={styles.primary}>
+          <a
+            href="#work"
+            className={styles.primary}
+            data-umami-event="View my work button"
+          >
             View my work
           </a>
-          <a href="#contact" className={styles.secondary}>
+          <a
+            href="#contact"
+            className={styles.secondary}
+            data-umami-event="Contact button"
+          >
             Let's chat
           </a>
         </div>

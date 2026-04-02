@@ -15,6 +15,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
+            data-umami-event="Github link"
           >
             GitHub
           </a>
@@ -23,10 +24,15 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
+            data-umami-event="Linkedin link"
           >
             LinkedIn
           </a>
-          <a href="mailto:hello@rachelleragasa.dev" className={styles.link}>
+          <a
+            href="mailto:hello@rachelleragasa.dev"
+            className={styles.link}
+            data-umami-event="Email link"
+          >
             Email
           </a>
         </div>
