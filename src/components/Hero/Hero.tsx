@@ -11,8 +11,8 @@ function Hero() {
         </h1>
 
         <p className={styles.sub}>
-          React · TypeScript · Accessibility · AI-assisted development · 10
-          years building products that scale.
+          React · TypeScript · Accessibility · 10 years building products that
+          scale.
         </p>
 
         <div className={styles.actions}>

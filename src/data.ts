@@ -3,6 +3,23 @@ import type { Project, Experience, Skill } from "./types";
 export const projects: Project[] = [
   {
     id: 1,
+    title: "Energy Monitor",
+    description:
+      "Full-stack energy consumption dashboard — Next.js frontend + FastAPI Python backend.",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "FastAPI",
+      "Pandas",
+      "openpyxl",
+    ],
+    year: "2026",
+    featured: true,
+    link: "https://energy-monitor-alpha.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Cirilo Filipino Kainan",
     description:
       "Website, signage, and menu design for Cirilo Filipino Kainan, a cohesive digital and print identity for an East London Filipino restaurant.",
@@ -12,7 +29,7 @@ export const projects: Project[] = [
     link: "https://www.cirilofilipinokainan.co.uk/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Escape Dance Holiday",
     description:
       "E-commerce website for ESCAPE Dance Holiday, built on WooCommerce with Stripe payment integration for package bookings.",
@@ -22,7 +39,7 @@ export const projects: Project[] = [
     link: "https://www.escapedance.co.uk/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Reading School of Dance",
     description:
       "Brochure website for a local dance school, built with clean, responsive HTML and CSS.",
@@ -32,7 +49,7 @@ export const projects: Project[] = [
     link: "https://www.readingschoolofdance.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "UKvsCOVID Hackathon - Tell My GP",
     description:
       "Built during the #UKvsCOVIDHack, Tell My GP is a web app designed to bridge the gap between COVID-19 patients and their GPs — addressing a real problem where patient data from 111 calls was invisible to local doctors.",
