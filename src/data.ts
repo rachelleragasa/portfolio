@@ -20,6 +20,15 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    title: "Portfolio",
+    description: "A showcase of what I build.",
+    tags: ["React", "TypeScript", "Vite", "CSS Modules"],
+    year: "2026",
+    featured: true,
+    link: "https://rachelleragasa.dev/",
+  },
+  {
+    id: 3,
     title: "Cirilo Filipino Kainan",
     description:
       "Website, signage, and menu design for Cirilo Filipino Kainan, a cohesive digital and print identity for an East London Filipino restaurant.",
@@ -29,7 +38,7 @@ export const projects: Project[] = [
     link: "https://www.cirilofilipinokainan.co.uk/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Escape Dance Holiday",
     description:
       "E-commerce website for ESCAPE Dance Holiday, built on WooCommerce with Stripe payment integration for package bookings.",
@@ -39,7 +48,7 @@ export const projects: Project[] = [
     link: "https://www.escapedance.co.uk/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Reading School of Dance",
     description:
       "Brochure website for a local dance school, built with clean, responsive HTML and CSS.",
@@ -49,7 +58,7 @@ export const projects: Project[] = [
     link: "https://www.readingschoolofdance.com/",
   },
   {
-    id: 5,
+    id: 6,
     title: "UKvsCOVID Hackathon - Tell My GP",
     description:
       "Built during the #UKvsCOVIDHack, Tell My GP is a web app designed to bridge the gap between COVID-19 patients and their GPs — addressing a real problem where patient data from 111 calls was invisible to local doctors.",
